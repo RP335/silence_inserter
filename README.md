@@ -16,7 +16,7 @@ Common issues this causes:
 - DJ software (e.g., Rekordbox) fails to quantize correctly when a track starts exactly at `0:00`.
 - Inserting silence inside the DAW messes up bar numbering, automation timing, LFO sync, and effect timing.
 
-This tool solves it **after export** — without touching your arrangement or plugins.
+This tool solves it **after export** without touching your arrangement or plugins.
 
 Inspired by [darkmarthur’s StartOffseter](https://github.com/darkmarthur/StartOffseter), but re-implemented for the browser.
 
@@ -24,16 +24,16 @@ Inspired by [darkmarthur’s StartOffseter](https://github.com/darkmarthur/Start
 
 ## Features
 
-- **Add silence by beats** Enter the number of beats and BPM — the tool calculates the exact silence length.
+- **Add silence by beats** Enter the number of beats and BPM and the tool calculates the exact silence length.
 
 - **Add silence by milliseconds** Specify a fixed duration in milliseconds for more direct control.
 
 - **Preserves audio quality** Bit depth, sample rate, and channel count remain identical to the original file.  
-  No re-encoding — just pure byte-level manipulation.
+  No re-encoding.
 
 - **Metadata preservation** All non-audio chunks (BWF metadata, cue markers, iXML, etc.) are kept exactly as in the source.
 
-- **Cross-platform** Works on Mac, Windows, Linux — any device with a modern browser.
+- **Cross-platform** Works on Mac, Windows, Linux or any device with a modern browser.
 
 - **Offline capable** Once loaded, it can run with no internet connection.
 
@@ -68,7 +68,7 @@ This browser version focuses on transparency and portability.
 It **does not** yet include:
 
 - **WAV HEX fixing for Pioneer CDJs** StartOffseter rewrites the `fmt` chunk to strict PCM 24-bit LE and forces a fixed chunk order (`RIFF → fmt → metadata → data`).  
-  This tool preserves the original file header — which is fine for most workflows, but may not fix `E-8305` errors on some Pioneer CDJs.
+  This tool preserves the original file header which is fine for most workflows, but may not fix `E-8305` errors on some Pioneer CDJs.
 
 - **Forced 24-bit output option** StartOffseter always outputs `pcm_s24le`. This tool keeps the original format (e.g., float32, 16-bit, etc.).
 
