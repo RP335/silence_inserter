@@ -42,7 +42,7 @@ Inspired by [darkmarthur’s StartOffseter](https://github.com/darkmarthur/Start
 ## How to Use
 
 1. Visit the hosted app:  
-   **[Live Demo on GitHub Pages](https://<your-username>.github.io/<repo-name>/)**
+   **[Live Demo on GitHub Pages](https://rp335.github.io/silence_inserter/)**
 
 2. Drag and drop a `.wav` file, or use the file selector.
 
